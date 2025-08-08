@@ -1,4 +1,5 @@
 import streamlit as st
+from explanation import explain_credit_score
 from main import predict_credit_score  # Import from your main script
 
 st.title("💳 Loan Credit Score & Decision Predictor")
@@ -24,9 +25,13 @@ if st.button("Predict Credit Score"):
     score, _ = predict_credit_score(user_input)
     
     st.subheader(f"Predicted Credit Score: {score}")
-    if score >= 700:
+    if score >= 680:
         st.success("✅ Loan Approved")
     elif score >= 600:
         st.warning("🟡 Loan Under Review")
     else:
         st.error("❌ Loan Rejected")
+    st.subheader(f"Feature Weights on Credit:")
+    
+    shap_fig = explain_credit_score(user_input, show_plot=False)
+    st.pyplot(shap_fig)
