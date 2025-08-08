@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Score Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Credit Score Estimator</h1>
+    <form id="credit-form">
+      <input type="number" name="age" placeholder="Age" required>
+      <input type="number" name="num_occupants" placeholder="Number of Occupants" required>
+      <input type="number" name="cash_inflow" placeholder="Monthly Cash Inflow" required>
+      <input type="number" name="avg_bank_balance" placeholder="Avg Bank Balance" required>
+      <input type="text" name="bill_payment_consistency" placeholder="Bill Payment (Usually/Rarely/etc)" required>
+      <select name="bnpl_used" required>
+        <option value="true">BNPL Used: Yes</option>
+        <option value="false">BNPL Used: No</option>
+      </select>
+      <input type="number" name="rent_amount" placeholder="Rent Amount" required>
+      <input type="text" name="location_type" placeholder="Location Type" required>
+      <input type="text" name="education_level" placeholder="Education Level" required>
+      <input type="text" name="income_type" placeholder="Income Type" required>
+      <input type="number" name="grade_or_cgpa" placeholder="Grade or CGPA" required>
+      <input type="text" name="housing_type" placeholder="Housing Type" required>
+      <input type="number" step="any" name="age_to_employment_ratio" placeholder="Age-to-Employment Ratio" required>
+      <button type="submit">Get Credit Score</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="suggestions"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
