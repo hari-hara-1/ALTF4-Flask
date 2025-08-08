@@ -1,0 +1,8 @@
+age,num_occupants,cash_inflow,avg_bank_balance,bill_payment_consistency,bnpl_used,bnpl ratio,rent_amount,location_type,education_level,income_type,grade_or_cgpa,housing_type,age_to_employment_ratio,credit_score,loan_decision
+28,3,48000,3000,Usually,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,Usually,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,90.5,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,90.5,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,90.5,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,90.5,1,0.4,7000,2,0,0,6.8,1,0.5,,
+28,3,48000,3000,90.5,1,0.4,7000,2,0,0,6.8,1,0.5,,
